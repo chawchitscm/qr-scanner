@@ -6,25 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>QR Code Scanner</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        html,
-        body {
-            padding: 0;
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .wrapper {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        #reader {
-            width: 600px;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
@@ -34,9 +16,7 @@
         <h1>Scanned Result</h1>
         <div id="scanned"></div>
     </div>
-    <script src="https://unpkg.com/html5-qrcode@2.0.9/dist/html5-qrcode.min.js"></script>
-    <!-- <script src="html5qrcode.js" type="text/javascript"></script> -->
-    <script src="./main.js"></script>
+    <script src="./js/html5qrcode.js"></script>
+    <script src="./js/main.js"></script>
 </body>
-
 </html>
