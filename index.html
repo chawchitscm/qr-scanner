@@ -1,39 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>QR Code Scanner</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-      html,
-      body {
-        padding: 0;
-        margin: 0;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-      .wrapper {
-        padding: 0 4rem;
-      }
-      #scanned {
-        display: flex;
-        flex-direction: column;
-        gap:1rem;
-      }
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #reader {
+            width: 600px;
+        }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="wrapper">
-      <h1>QR Code Scanner</h1>
-      <div style="display: flex; gap: 1rem">
+        <h1>QR Code Scanner</h1>
         <div id="reader"></div>
-        <div>
-          <h1>Scanned Result</h1>
-          <div id="scanned"></div>
-        </div>
-      </div>
+        <h1>Scanned Result</h1>
+        <div id="scanned"></div>
     </div>
-    <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
+    <script src="html5qrcode.js" type="text/javascript"></script>
     <script src="./main.js" async></script>
-  </body>
+</body>
+
 </html>

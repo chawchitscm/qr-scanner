@@ -1,4 +1,13 @@
-const html5QrCode = new Html5Qrcode("reader");
+var qrFormatsToSupport = [ 
+    Html5QrcodeSupportedFormats.QR_CODE
+];
+var html5qrcodeConfig = {
+    formatsToSupport: qrFormatsToSupport,
+    experimentalFeatures: {
+        useBarCodeDetectorIfSupported: true 
+     }
+};
+const html5QrCode = new Html5Qrcode("reader", html5qrcodeConfig);
 const qrCodeSuccessCallback = (decodedText, decodedResult) => {
     var scanned = document.getElementById("scanned");
     scanned.innerText = decodedText;
