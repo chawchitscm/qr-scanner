@@ -70,8 +70,7 @@ function startScanner() {
                 "code_93_reader",
                 "codabar_reader",
                 "upc_reader",
-                "upc_e_reader",
-                "i2of5_reader"
+                "upc_e_reader"
             ],
             debug: {
                 showCanvas: true,
