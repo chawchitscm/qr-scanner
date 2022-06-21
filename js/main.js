@@ -67,7 +67,7 @@ function startScanner() {
                 "ean_reader",
                 "ean_8_reader",
                 "code_39_reader",
-                "code_39_vin_reader",
+                "code_93_reader",
                 "codabar_reader",
                 "upc_reader",
                 "upc_e_reader",
@@ -147,7 +147,7 @@ function startScanner() {
 
     Quagga.onDetected(function (result) {
         var scanned = document.getElementById("scanned");
-        scanned.innerText = result.codeResult.code + "," + result.codeResult.format;
+        scanned.innerText = result.codeResult.code;
     });
 }
 
