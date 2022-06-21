@@ -68,10 +68,10 @@ function startScanner() {
                 "ean_8_reader",
                 "code_39_reader",
                 "code_93_reader",
-                "codabar_reader",
                 "upc_reader",
                 "upc_e_reader"
             ],
+            multiple: false,
             debug: {
                 showCanvas: true,
                 showPatches: true,
